@@ -18,17 +18,17 @@
         </header>
         <form action="" id="survey-form">
             <div class="form-group">
-                <label for="name">Name</label>
+                <label id="name-label" for="name">Name</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
             </div>
 
             <div class="form-group">
-                <label for="email" id="email-label">Email</label>
+                <label id="email-label" for="email-label" id="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
                     required>
             </div>
             <div class="form-group">
-                <label for="number" id="number-label">Age <span class="clue">(optional)</span></label>
+                <label id="number-label" for="number" id="number">Age <span class="clue">(optional)</span></label>
                 <input type="number" min="10" max="99" name="name" id="number" class="form-control" placeholder="Age">
             </div>
             <div class="form-group">
@@ -110,13 +110,15 @@
                     <input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum
                 </label>
                 <label>
-                    <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox"/>Additional Courses
+                    <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional
+                    Courses
                 </label>
             </div>
 
             <div class="form-group">
                 <p>Any comments or suggestions?</p>
-                <textarea name="" id="comments" cols="30" rows="10" class="input-textarea" placeholder="Enter your comment here...."></textarea>
+                <textarea name="" id="comments" cols="30" rows="10" class="input-textarea"
+                    placeholder="Enter your comment here...."></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
